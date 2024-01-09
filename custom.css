@@ -1,0 +1,278 @@
+:root{
+    --light-grey: rgb(244,244,244);
+    --medium-grey: rgb(220,220,220);
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    background-image: url(../images/header-img.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center; 
+}
+
+header article{
+    background: rgba(0,0,0,0.6);
+    margin: 0;
+    padding: 10em 0em;
+}
+
+nav{
+    text-align: center;
+    background-color: grey;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a{
+    width: 12.6%;
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+    color: white;
+    text-decoration: none;    
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+nav a:hover{
+    background: var(--light-grey);
+    color: grey;
+}
+
+nav .activePage{
+    border: solid thin white;
+    border-bottom: none;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+#display nav a:hover{
+    background: white;
+}
+
+h1{
+    font-size: xxx-large;
+}
+
+h2{
+    padding-top: 0.6em;
+    text-align: center;
+}
+
+form fieldset{
+    padding: 1em;
+    border: solid thin darkseagreen;
+}
+
+input{
+    border: solid thin darkseagreen;
+}
+
+.submit{
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 75%;
+    background: darkseagreen;
+    padding: 0.4em;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background: var(--light-grey);
+    color: green;
+}
+
+legend{
+    font-variant: small-caps;
+}
+
+main{
+    padding: 0em 1em;
+}
+
+p{
+    text-indent: 1.5em;
+    line-height: 1.3em;
+}
+
+#index p{
+    padding: 0.2em 2em 0.5em;
+    
+}
+
+.noIndent{
+    text-indent: 0em;
+}
+
+#index main{
+    width: 54%;
+    margin: auto; 
+    background: var(--light-grey);
+}
+
+#index main section p a{
+    color: black;
+}
+
+#index main section p a:hover{
+    color: darkseagreen;
+}
+
+textarea{
+    border: solid thin darkseagreen;
+}
+
+footer{
+    text-align: center;
+    background: grey;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    padding: 1em 0em;
+    color: white;
+}
+
+footer p{
+    padding: 0.2em 2em 0.5em;
+}
+
+footer .Info a{
+    color: white;
+}
+
+footer .Info a:hover{
+    color: black;
+}
+
+.footer-nav nav a{
+    border: none;
+    border-radius: 1em;
+    display: inline-block;
+    margin-left: 5em;
+}
+
+.footer-nav nav .activePage{
+    background: rgb(139, 139, 139);
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-nav nav a:hover{
+    background: white;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    background: darkseagreen;
+    border-radius: 2.5em;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+}
+
+table th, td{
+    width: 16.67%;
+    padding: 0.5em;
+}
+
+table td{
+    color: #4F4F4F;
+    text-transform: capitalize;
+}
+
+table th{
+    font-variant: small-caps;
+    background: grey;
+    color: white;
+    border-bottom: solid medium black;
+}
+
+table .description{
+    border-top-right-radius: 2.5em;
+}
+
+table .netId{
+    border-top-left-radius: 2.5em;
+}
+
+#display main h2{
+    margin-top: 0.75em;
+    background: grey;
+    color: white;
+    padding-bottom: 1.2em;
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+/* Grid Layout/////*/
+main .grid-layout{
+    display: grid;
+    grid-template-columns: 23.8% 52.5% 25%;
+}
+
+main .grid-layout .heading{
+    grid-column: 1/4;
+}
+
+main .grid-layout .howTo{
+    grid-column: 1/4;
+    background: var(--light-grey);
+    margin-left: 23.5%;
+    width: 51.8%;
+}
+
+main .howTo h2{
+    font-size: medium;
+    padding-top: 1em;
+}
+
+main .howTo p{
+    padding: 0.5em 1em 1.5em;
+}
+
+main .howTo a{
+    color: black;
+}
+
+main .howTo a:hover{
+    color: darkseagreen;
+}
+
+main .grid-layout h2{
+    background: var(--light-grey);
+    width: 51.8%;
+    margin-left: 23.5%;
+}
+
+main .grid-layout form{
+    background: var(--light-grey);
+    padding: 0em 1em 1em;
+}
+
+/*Footer Grid ////////*/
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+}
+
+footer h2{
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 0.2em;
+    border-bottom: solid thin white;
+    padding-bottom: 0.4em;
+}

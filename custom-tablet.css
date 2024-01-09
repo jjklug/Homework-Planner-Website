@@ -1,0 +1,27 @@
+.footer-nav nav a{
+    margin-left: 2em;
+    width: 25%;
+    margin-bottom: 0.5em;
+}
+
+#index main{
+    width: 75%;
+}
+
+main .grid-layout{
+    grid-template-columns: 12.5% 75% 12.5%;
+}
+
+main .grid-layout h2{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+main .grid-layout .howTo{
+    margin-left: 12.5%;
+    width: 75%;
+}
+
+header{
+    background-image: url(../images/header-img-tablet.jpg);
+}

@@ -1,0 +1,66 @@
+nav a{
+    display: block;
+    width: 100%;
+    border-bottom: solid thin white;
+    border-radius: 0em;
+     
+}
+
+nav .activePage{
+    border-radius: 0em;
+    border: none;
+    border-bottom: solid thin grey;
+    background: var(--light-grey);
+    color: grey;
+}
+
+table th{
+    padding-top: 1em;
+}
+
+table th, td{
+    font-size: x-small;
+}
+
+table tr:last-of-type td{
+    padding-bottom: 1.5em;
+}
+
+footer{
+    grid-template-columns: auto;
+}
+
+footer section{
+    width: 90%
+}
+
+.footer-nav{
+    grid-row: 1/2;
+}
+
+.footer-nav nav a{
+    width: 50%;
+    margin-left: 2em;
+}
+
+#index main{
+    width: 90%;
+}
+
+main .grid-layout{
+    grid-template-columns: 5% 90% 5%;
+}
+
+main .grid-layout h2{
+    width: 90%;
+    margin-left: 5%;
+}
+
+main .grid-layout .howTo{
+    margin-left: 5%;
+    width: 90%;
+}
+
+header{
+    background-image: url(../images/header-img-phone.jpg);
+}
